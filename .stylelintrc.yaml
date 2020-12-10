@@ -1,0 +1,13 @@
+extends:
+  - stylelint-config-standard
+  - stylelint-config-rational-order
+
+plugins:
+  - stylelint-order
+
+rules:
+  declaration-empty-line-before: null
+  indentation: 4
+  plugin/rational-order:
+    - true
+    - empty-line-between-groups: true
