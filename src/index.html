@@ -54,7 +54,7 @@
                         </h2>
                     </li>
                     <li class="nav-item col-3">
-                        <a class="nav-item-link" href="#ikea-effect">
+                        <a class="nav-item-link no-link-decoration" href="#ikea-effect">
                             <h3>1</h3>
                             <h4 class="sub-third-title text-orange">Эффект ИКЕА</h4>
                             <p class="text">Вы переоцениваете собственные решения, и, как следствие, недооцениваете
@@ -62,7 +62,7 @@
                         </a>
                     </li>
                     <li class="nav-item col-3">
-                        <a class="nav-item-link" href="#premature-optimization">
+                        <a class="nav-item-link no-link-decoration" href="#premature-optimization">
                             <h3>2</h3>
                             <h4 class="sub-third-title text-orange">Преждевременная оптимизация</h4>
                             <p class="text">Вы оптимизируете что-то задолго до того, как в этом появляется
@@ -70,7 +70,7 @@
                         </a>
                     </li>
                     <li class="nav-item col-3">
-                        <a class="nav-item-link" href="#distortion-of-novelty">
+                        <a class="nav-item-link no-link-decoration" href="#distortion-of-novelty">
                             <h3>3</h3>
                             <h4 class="sub-third-title text-orange">Искажение новизны</h4>
                             <p class="text">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и
@@ -78,7 +78,7 @@
                         </a>
                     </li>
                     <li class="nav-item col-3">
-                        <a class="nav-item-link" href="#hyperbolic-depreciation">
+                        <a class="nav-item-link no-link-decoration" href="#hyperbolic-depreciation">
                             <h3>4</h3>
                             <h4 class="sub-third-title text-orange">Гиперболическое обесценивание</h4>
                             <p class="text">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную,
@@ -86,7 +86,7 @@
                         </a>
                     </li>
                     <li class="nav-item col-3">
-                        <a class="nav-item-link" href="#errors-in-planning">
+                        <a class="nav-item-link no-link-decoration" href="#errors-in-planning">
                             <h3>5</h3>
                             <h4 class="sub-third-title text-orange">Ошибка планирования</h4>
                             <p class="text">Неправильно рассчитывать время необходимое для завершения задачи.    </p>
@@ -119,11 +119,13 @@
                 <div class="col-2">
                     <p class="sub-text">Когнитивные искажения</p>
                     <h2 class="sub-second-title">Преждевременная оптимизация</h2>
-                    <p class="sub-third-title">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
+                    <p class="sub-third-title">Вы оптимизируете что-то задолго до того, как в этом появляется
+                        необходимость.</p>
                 </div>
                 <img class="img col-2" src="img/2.png" alt="обесценивание">
                 <h3 class="col-1 text-black bkg-white">Как проявляется</h3>
-                <p class="col-2">Если вы добавите аэродинамический спойлер к своему старому автомобилю вместо ремонта мотора,
+                <p class="col-2">Если вы добавите аэродинамический спойлер к своему старому автомобилю вместо ремонта
+                    мотора,
                     то автомобиль не станет быстрее.</p>
                 <p class="col-2">Отличный пример: писать максимально подтюненный и высокопроизводительный
                     код для всего лишь экспериментального проекта.</p>
@@ -177,7 +179,8 @@
                 </div>
                 <h3 class="col-1 text-white bkg-dark">Как проявляется</h3>
                 <p class="col-2">Одно из искажений, которое должно признать большинство из нас. И менеджеры проекта,
-                    и сами пользователи продукта — все склонны ставить сроки, в которые невозможно закончить запланированное.</p>
+                    и сами пользователи продукта — все склонны ставить сроки, в которые невозможно закончить
+                    запланированное.</p>
                 <p class="col-2"><span>Это отлично выражается в старом афоризме:</span>
                     Первые 90% готового кода отнимают первые 90% времени разработки.
                     Оставшиеся 10% отнимают вторые 90% времени разработки.</p>
@@ -186,17 +189,21 @@
 
     </main>
 
-    <footer class="footer">
-        <form>
-            <h2>Хотите узнать больше? Подпишитесь на обновления</h2>
-            <label for="email"></label>
-            <input type="email" id="email">
-            <button></button>
-        </form>
-        <p>Подписываясь, вы принимаете <a href="#">правила сервиса</a></p>
-        <p>© 2020 Константин Константинопольский</p>
-        <p>По материалам статьи Yash Ranadive Cognitive Biases in Programming</p>
-        <a>Курсы программирования Hexlet</a>
+    <footer class="footer section-container">
+        <div class="form-container text-white">
+            <h2>Хотите узнать больше?<br> Подпишитесь на обновления</h2>
+            <form class="form">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" placeholder="Ваша электронаая почта">
+                <button class="button footer-button"></button>
+                <p>Подписываясь, вы принимаете <a href="#" class="text-white">правила сервиса</a></p>
+            </form>
+        </div>
+        <div class="contacts">
+            <p>© 2020 Константин Константинопольский</p>
+            <p>По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+            <a href="https://ru.hexlet.io/my">Курсы программирования Hexlet</a>
+        </div>
     </footer>
 </div>
 </body>
