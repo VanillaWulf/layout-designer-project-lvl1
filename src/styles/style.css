@@ -10,32 +10,38 @@
     --brown-color: #b09a81;
     --background-dark-color: #b09a81;
     --secondary-color: #908d8b;
+    --placeholder-color: #757575;
+    --input-border-color: #e3e3e3;
+    --button-hover-color: #ea7600;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-    margin: 0;
+@font-face {
+    font-family: "neucha";
+    src: url("../fonts/NeuchaRegular.eot");
+    src: url("../fonts/NeuchaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/NeuchaRegular.woff") format("woff"),
+    url("../fonts/NeuchaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
+@font-face {
+    font-family: "open-sans";
+    src: url("../fonts/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 body {
-    margin: 0;
-    padding: 0;
 
     color: var(--dark-color);
 
     font-weight: normal;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open-sans', sans-serif;
     font-style: normal;
     line-height: 160%;
 }
@@ -72,6 +78,8 @@ body {
     opacity: 0.1;
 
     content: '';
+
+    z-index: 1;
 }
 
 .bkg-gray {
@@ -88,19 +96,19 @@ body {
 
 .title {
     font-size: 72px;
-    font-family: Neucha, cursive;
+    font-family: "neucha", cursive;
     line-height: 120%;
 }
 
 .sub-second-title {
     font-size: 60px;
-    font-family: Neucha, cursive;
+    font-family: "neucha", cursive;
     line-height: 120%;
 }
 
 .sub-third-title {
     font-size: 34px;
-    font-family: Neucha, cursive;
+    font-family: "neucha", cursive;
     line-height: 120%;
 }
 
@@ -126,10 +134,18 @@ body {
     color: var(--white-color);
 
     background: var(--basic-dark-color);
+
+    border: none;
 }
 
-.button:hover {
-    background: blue;
+.button:hover,
+.button:focus {
+    background: var(--button-hover-color);
+    cursor: pointer;
+}
+
+.button:active {
+    opacity: .8;
 }
 
 .display-flex {
@@ -305,12 +321,27 @@ body {
 
 .form label {
     display: block;
+    margin: 0 0 9px;
+}
+
+.form-input-container {
+    display: flex;
 }
 
 .form input {
+    width: 423px;
     height: 50px;
     padding: 15px;
     box-sizing: border-box;
+    border: 1px solid var(--input-border-color);
+}
+
+.form p {
+    font-size: 12px;
+}
+
+.form input::placeholder {
+    color: var(--placeholder-color);
 }
 
 .footer-button {
@@ -342,4 +373,8 @@ body {
 
     font-size: 14px;
     text-align: center;
+}
+
+.contacts p {
+    margin: 0 0 16px;
 }
