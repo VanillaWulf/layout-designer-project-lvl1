@@ -193,6 +193,7 @@ body {
 
 .header-button {
     text-transform: uppercase;
+    z-index: 2;
 }
 
 .about {
