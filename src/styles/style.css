@@ -185,7 +185,7 @@ body {
 }
 
 .header {
-    height: 916px;
+    height: 914px;
     overflow: hidden;
 
     background-color: var(--light-color);
@@ -261,7 +261,8 @@ body {
 
 .nav-item-link {
     display: block;
-    min-height: 310px;
+    box-sizing: border-box;
+    min-height: 323px;
     padding: 24px;
 
     background: var(--light-color);
@@ -286,9 +287,26 @@ body {
 }
 
 .content .img {
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.content-img {
     z-index: 1;
 
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    vertical-align: middle;
+}
+
+.content-text {
+    box-sizing: border-box;
+    width: calc(100% - 578px);
+}
+
+.bkg-gray .content-text {
+    padding: 0 0 0 30px;
+}
+
+.bkg-dark .content-text {
+    padding: 30px 0 0;
 }
 
 .content .sub-text {
