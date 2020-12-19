@@ -185,7 +185,7 @@ body {
 }
 
 .header {
-    min-height: 960px;
+    height: 916px;
     overflow: hidden;
 
     background-color: var(--light-color);
