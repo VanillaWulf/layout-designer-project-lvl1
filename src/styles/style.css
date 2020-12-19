@@ -112,12 +112,14 @@ body {
 .title {
     font-size: 72px;
     font-family: "neucha", cursive;
+    font-weight: normal;
     line-height: 120%;
 }
 
 .sub-second-title {
     font-size: 60px;
     font-family: "neucha", cursive;
+    font-weight: normal;
     line-height: 120%;
 }
 
@@ -144,7 +146,7 @@ body {
 }
 
 .button {
-    padding: 12px 24px;
+    padding: 16px 30px;
 
     color: var(--white-color);
 
@@ -191,21 +193,24 @@ body {
     background-color: var(--light-color);
 }
 
-.header h2 {
-    margin: 0 0 225px;
+.header h1 {
+    margin: 0 0 204px;
+
+    letter-spacing: 1.5px;
 }
 
 .header img {
     position: absolute;
-    top: 55px;
-    right: -270px;
+    top: 45px;
+    right: -145px;
 }
 
 .header p {
-    margin: 0 0 30px;
+    margin: 0 0 17px;
 }
 
 .header-button {
+    margin: 23px 0 0 0;
     z-index: 2;
 
     text-transform: uppercase;
@@ -219,15 +224,16 @@ body {
 
 .about h2 {
     margin: 0 0 30px;
+    letter-spacing: 0.9px;
 }
 
 .about p {
-    margin: 0 0 379px;
+    margin: 0 0 415px;
 }
 
 .video {
     position: absolute;
-    bottom: -100px;
+    bottom: -85px;
     left: 50%;
 
     border: none;
@@ -245,12 +251,18 @@ body {
 
 .nav h2 {
     font-size: 52px;
+    font-weight: normal;
     font-family: 'Neucha', sans-serif;
     line-height: 120%;
 }
 
 .nav-list {
     display: flex;
+}
+
+.nav-item h4 {
+    margin: 0 0 15px;
+    font-weight: normal;
 }
 
 .nav-item:nth-child(1),
@@ -324,8 +336,8 @@ body {
 }
 
 .content h3 {
-    margin: 100px 0 20px;
-    padding: 4px 8px;
+    margin: 94px 0 20px;
+    padding: 1px 10px;
 
     font-weight: bold;
     font-size: 14px;
