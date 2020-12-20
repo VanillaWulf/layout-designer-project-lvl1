@@ -146,11 +146,13 @@ body {
 }
 
 .button {
-    padding: 16px 30px;
+    padding: 12px 24px;
 
     color: var(--white-color);
 
     font-weight: 700;
+    font-size: inherit;
+    line-height: inherit;
 
     background: var(--basic-dark-color);
 
@@ -203,8 +205,8 @@ body {
 
 .header img {
     position: absolute;
-    top: 60px;
-    right: -98px;
+    top: 55px;
+    right: -105px;
 }
 
 .header p {
@@ -246,7 +248,7 @@ body {
 }
 
 .nav {
-    margin: -190px 0 0;
+    margin: -200px 0 0;
 
     padding: 101px 0 0 0;
 
