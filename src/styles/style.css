@@ -279,9 +279,9 @@ body {
 }
 
 .nav-item-link {
-    height: 100%;
     display: block;
     box-sizing: border-box;
+    height: 100%;
     min-height: 323px;
     padding: 24px;
 
