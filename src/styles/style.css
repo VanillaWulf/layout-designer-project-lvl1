@@ -382,7 +382,7 @@ body {
 .form input {
     box-sizing: border-box;
     width: 423px;
-    height: 50px;
+    min-height: 50px;
     padding: 15px;
 
     border: 1px solid var(--input-border-color);
@@ -404,7 +404,7 @@ body {
     position: relative;
 
     width: 70px;
-    height: 50px;
+    min-height: 50px;
 }
 
 .footer-button::before {
@@ -413,7 +413,7 @@ body {
     left: 50%;
 
     width: 20px;
-    height: 20px;
+    min-height: 20px;
 
     background-image: url(../img/send.svg);
     background-repeat: no-repeat;
